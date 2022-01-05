@@ -1,0 +1,15 @@
+{
+  "name": "isa-web",
+  "version": "1.0.0",
+  "description": "A website created for IntellexAI Student Association",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sourabh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:wght@300&display=swap");
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* -----------Header & Navbar--------------*/
+li,
+a {
+  font-weight: 300;
+  font-size: 16px;
+  color: #423f3e;
+  text-decoration: none;
+}
+p {
+    font-weight: 300;
+    font-size: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+li:hover {
+  color: #EC255A;
+}
+a:hover {
+  color: #EC255A;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.logo {
+  color: #EC255A;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: xx-large;
+}
+.logo:hover {
+  color: #423f3e;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+button {
+  padding: 9px 25px;
+  background-color: #423f3e;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0.3s;
+}
+button:hover {
+  background-color: #EC255A;
+  
+}
+.nav_links li a {
+  transition: all 0.5s ease 0.3s;
+}
+/* -------Events-------- */
+.carousel-item{
+    height: 64rem;
+    background-color: #777;
+    color: whitesmoke;
+    position: relative;
+    background-color: #000;
+
+}
+.container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+    text-align-last: center;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.event-btn{
+    background-color: #423f3e;
+    color: whitesmoke;
+}
+.event-btn:hover{
+    background-color: #EC255A;
+    color: whitesmoke;
+    cursor: default;
+}
+/* ----------About------- */
+#About{
+    background-color: #423f3e;
+}
+.about-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 340px;
+    height: 450px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+}
+.card .circle{
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    transform: translateX(-50%);
+    clip-path: circle();
+}
+.card .circle::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 20px rgba(236, 37, 90, 0.5);
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none ;
+}
+.circle .imgBox{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 310px;
+
+}
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+.imgBox img:hover{
+    transform: scale(1.2);
+}
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    padding: 20px 30px;
+    /* background: #777; */
+}
+.content h3{
+    font-size: 1.4em;
+    color: #423f3e;
+    margin-top: 7px;
+    margin-bottom: 2px;
+
+}
+.content .fa-linkedin{
+    color:  #2867B2;
+}
+.content .textIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.content .textIcon h4{
+    color: #EC255A;
+    font-weight: 400;
+}
+
+/* -----------Footer------------ */
+
+footer {
+    background-color: #4d4948;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+footer h3{
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+footer h3:hover{
+    color: #EC255A;
+}
+footer i:hover{
+    color: #EC255A;
+}
+footer button:hover{
+    background-color: #423f3e;
+}
+.follow{
+    color: whitesmoke;
+}
+.follow:hover{
+    color: #EC255A;
+}
